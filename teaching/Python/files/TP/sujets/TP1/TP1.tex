@@ -1,0 +1,83 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[top=2cm, left=2cm, right=2cm, bottom=2cm]{geometry}
+\usepackage{url}
+\usepackage{palatino, mathpazo}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=4,
+    language=Python
+}
+
+\lstset{style=mystyle}
+
+\title{Langage Python\\
+TD-TP 1} 
+\author{Y. \bsc{Alj}}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Pré-requis}
+\begin{itemize}
+\item Connaître l'architecture de votre processeur (32 ou 64 bits).
+\item Installation d'Ananconda  : \url{https://www.anaconda.com/products/individual}. Choisir la version correspondant à l'architecture de votre processeur.
+\end{itemize}
+
+\section*{Exercice 1:}
+\begin{enumerate}
+\item Sans exécuter le script ci-dessous, quels sont les résultats des instructions suivantes.
+\item Créer un nouveau script dans Spyder, y coller le script ci-dessous. Les résultats affichés correspondent-ils à vos attentes?
+\end{enumerate}
+
+
+\begin{minipage}{0.5\textwidth}
+\lstinputlisting{./progs/exercice1.py}
+\end{minipage}
+
+
+
+\section*{Exercice 2:}
+Ouvrir Spyder. Créer un nouveau fichier et écrire un script Python qui affiche Bonjour. Tester votre script.
+
+\section*{Exercice 3:}
+Ecrire un script qui demande deux nombres entiers à l'utilisateur, effectue les opérations ($+$,$-$, $\times$ et $\div$) et affiche les résultats de chacune de ces opérations.
+
+\newpage
+\section*{Exercice 4:}
+\begin{enumerate}
+\item Ecrire un script qui demande à l'utilisateur de saisir un nombre entier $N$, calcule la somme des entiers positifs qui sont inférieurs ou égaux à $N$ et qui affiche le résultat de la somme.
+\item Comment pouvez-vous vérifier l'exactitude du résultat trouvé?
+\item Modifier le programme précédent pour ne calculer que la somme des nombres pairs.
+\end{enumerate}
+
+
+\end{document}
